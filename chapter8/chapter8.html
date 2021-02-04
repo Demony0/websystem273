@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+		<head>
+			<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+			<meta name="author" content="Lebasora,John Jefferson F" />
+			<meta charset="utf-8" />
+			<title>Registration form</title>
+			<link rel="stylesheet" href="styles.css" />
+			<script src="button.js" defer></script>
+		</head>
+		
+		<body>
+			<header>
+				<h1 align="center"><u>Fill-up Form</u></h1>
+			</header>
+			
+			<main style="display:flex;justify-content:center">
+				<form method="post" action="chapter8.html" style="width:50;">
+				<div style="display:flex;width:50%;">
+					<fieldset style="display:flex;justify-content:center;align-items:center;">
+						<legend><h2>Identity</h2></legend>
+						<label>Last Name: </label><input name="lastName" type="text" required>
+						<label>First Name: </label><input name="firstName" type="text" required>
+						<label>Middle Name: </label><input name="middleName" type="text" required><br />
+						<label>BirthDay: </label><input name="birthday" type="date" required>
+						<label>Birth Place: </label><input name="text" type="text" required>
+						<label>Gender</label>
+						<select>
+							<option value="male">Male</option>
+							<option value="famale">Female</option>
+						</select>
+						Profile Picture<input type="file" required>
+						
+					</fieldset >
+					<fieldset style="display:flex;justify-content:center;align-items:center;">
+						<legend><h2>Contact</h2></legend>
+						<label>Mobile Number :</label><input name="number" placeholder="912 1234 123 (10digit)" 
+						type="tel" pattern="[0-9]{3} [0-9]{4} [0-9]{3}" required />
+						<label>Email :</label><input name="email" type="email" placeholder="john23@gmail.com" required />
+						<label>Current Address: </label><input name="address" type="text" required>
+						<br />
+						<hr />
+						<label>Status:</label>
+						<span>Single  <input type="radio" value="male" name="status"></span>
+						<span>Married<input type="radio" value="female" name="status"></span>
+						<br />
+						<hr />
+						<a href="#" style="text-decoration:none">Terms and Condition<input type="checkbox" required /></a>
+					</fieldset>
+				</div>	
+					<fieldset style="display:flex;">
+						<legend><h2>Creating Account</h2></legend>
+							<label>User Name: </label><input name="userName" placeholder="E.G:LebsGwapo143" style="width:100%" type="text" style="display:flex;" required />
+							<label>Password: </label><input name="passwrod" style="width:100%" pattern=".{8,}" type="password" style="display:flex;" placeholder="max-length of password must be 8 or more characters" required />
+					</fieldset>
+				
+					<fieldset style="display:flex;justify-content:center;align-items:center;width:50%;">
+						<legend><h2>FeedBack</h2></legend>
+						<Textarea rows="6" cols="64" style="margin:0;padding:0;box-sizing:border-box" placeholder="Input Your Feedback here!! Thank You"></textarea>
+					</fieldset>
+					<span style="display:flex;justify-content:space-between">
+					<input type="reset" style="width:10rem;height:4rem;font-size:2rem;font-weight:bold;background:red" />
+					<input type="submit" style="width:10rem;height:4rem;font-size:2rem;font-weight:bold;background:green" /></span>
+				</form>
+			
+			</main>
+			
+		</body>
+	</html>

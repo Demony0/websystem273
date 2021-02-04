@@ -1,0 +1,332 @@
+:root{
+	--shadow:black;
+	--fontColor:rgb(210,110,10);
+}
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+/*---Navigation-----*/
+
+header{
+	width:90%;
+	margin-right:5%;
+	margin-left:5%;
+	border-bottom:3px solid black;
+	border-radius:10px;
+	box-shadow:0px 5px 3px var(--shadow);
+	position:fixed;
+	z-index:1;
+	background:white;
+}
+
+header .navigationWrapper ul{
+	display:flex;
+	justify-content:space-between;
+	align-content:center;
+	margin-left:3%;
+	margin-right:3%;
+	margin-top:1%;
+	margin-bottom:1%;
+}
+
+header .navigationWrapper ul li{
+	list-style:none;
+}
+
+header .navigationWrapper ul li a{
+	text-decoration:none;
+	font-size:1.5rem;
+	color:white;
+	font-weight:bold;
+	text-shadow:3px 3px 5px var(--shadow);
+}
+
+header .navigationWrapper ul li a:hover{
+	transition:all 1s ease-in-out;
+	text-shadow:none;
+	color:var(--shadow);
+}
+
+h2{
+	font-size:3rem;
+}
+
+.contentWrapper{
+	overflow:hidden;
+}
+
+Figure{
+	width:400%;
+	position:relative;
+	display:flex;
+	animation:slide 16s infinite;
+}
+
+
+/*-----ASIA-----*/
+.Palawan{
+	background:url(../images/palawan.jpg);
+}
+
+.Palawan::after{
+	content:"PALAWAN";
+	font-size:3rem;
+	font-weight:bold;
+	position:absolute;
+	bottom:10px;
+	color:var(--fontColor);
+	text-shadow:1px 1px 5px var(--shadow);
+}
+
+.Palawan:hover:after{
+	content:"Palawan \A-The Philippines is famous for many reason\A and it includes having some of the most gorgeous beaches in \A the world. One province that boasts of stunning coastline \A and powdery white sand beaches is Palawan";
+	white-space:pre;
+	color:white;
+	font-size:2rem;
+	text-shadow:3px 3px 3px var(--shadow);
+	
+}
+
+
+.skyline::after{
+	content:"SkyLine";
+	font-size:3rem;
+	font-weight:bold;
+	position:absolute;
+	bottom:10px;
+	color:var(--fontColor);
+	text-shadow:1px 1px 5px var(--shadow);
+}
+
+.skyline:hover:after{
+	content:"SkyLine \A-Singapore only gained full independence from UK\A and became a sovereign state in 1965 ,but this brand-new\A country is now a financial powerhouse and one of\A the most fun countries to visit in Southeast Asia";
+	font-size:2rem;
+	white-space:pre;
+	color:white;
+	text-shadow:3px 3px 3px var(--shadow);
+}
+
+.skyline{
+	background:url(../images/skyline.jpg);
+}
+
+.mountFuji{
+	background:url(../images/mountFuji.jpg);
+}
+
+.mountFuji::after{
+	content:"Mount Fuji";
+	font-size:3rem;
+	font-weight:bold;
+	position:absolute;
+	bottom:10px;
+	color:var(--fontColor);
+	text-shadow:1px 1px 5px var(--shadow);
+}
+
+.mountFuji:hover:after{
+	content:"Mount Fuji\A-Although Mouth Fuji is an active stratovolcano,\Ait hasn`t erupted since 1708 the stunning snowcapped\Amountain is one of Japan`s \"Three holy Mountain\",\Awhich are traditionally considered to hold a particular power";
+	font-size:2rem;
+	white-space:pre;
+	color:white;
+	text-shadow:3px 3px 3px var(--shadow);
+	
+}
+/*-----EUROPE-----*/
+.eiffelTower{
+	background:url(../images/eiffelTower.jpg);
+}
+
+.eiffelTower::after{
+	content:"EIFFEL TOWER";
+	font-size:3rem;
+	font-weight:bold;
+	position:absolute;
+	bottom:10px;
+	color:var(--fontColor);
+	text-shadow:1px 1px 5px var(--shadow);
+}
+
+.eiffelTower:hover:after{
+	content:"EIFFEL TOWER\A -The Eiffel tower is a wrought-iron\A lattice tower on the champ de mars in Paris, France.\AIt is name after the engineer Gustave Eiffel,\Awhose company designed and built the tower";
+	white-space:pre;
+	color:white;
+	font-size:2rem;
+	text-shadow:3px 3px 3px var(--shadow);
+	
+}
+
+.leaningTower{
+	background:url(../images/leaningTower.jpg);
+}
+
+.leaningTower::after{
+	content:"LEANING TOWER OF PISA";
+	font-size:3rem;
+	font-weight:bold;
+	position:absolute;
+	bottom:10px;
+	color:var(--fontColor);
+	text-shadow:1px 1px 5px var(--shadow);
+	background-size:cover;
+}
+
+.leaningTower:hover:after{
+	content:"LEANING TOWER OF PISA\a-torre pendenti di pisa, medieval structure\a in Pisa, Italy, that is famous for the settling of\a its foundations, which caused it to lean 5.5 degrees\a from the perpendicular in the late 20th century";
+	white-space:pre;
+	color:white;
+	font-size:2rem;
+	text-shadow:3px 3px 3px var(--shadow);
+	
+}
+
+.sagradaFamilia{
+	background:url(../images/sagradaFamilia.jpg);
+}
+
+.sagradaFamilia::after{
+	content:"SAGRADA FAMILIA";
+	font-size:3rem;
+	font-weight:bold;
+	position:absolute;
+	bottom:10px;
+	color:var(--fontColor);
+	text-shadow:1px 1px 5px var(--shadow);
+	background-size:cover;
+}
+
+.sagradaFamilia:hover:after{
+	content:"SAGRADA FAMILIA \A -the basilica de la sagrada familia, also known \a as the Sagrada Familia, is a large unfinished \A Roman Catholic minor basilica in the Eixample \A dustrict of Barcelona,Catalonia,Spain.";
+	white-space:pre;
+	color:white;
+	font-size:2rem;
+	text-shadow:3px 3px 3px var(--shadow);
+	
+}
+
+/*-----AMERICA----*/
+
+.statueOfLiberty{
+	background:url(../images/statueOfLiberty.jpg);
+}
+
+.statueOfLiberty::after{
+	content:"STATUE OF LIBERTY";
+	font-size:3rem;
+	font-weight:bold;
+	position:absolute;
+	bottom:10px;
+	color:var(--fontColor);
+	text-shadow:1px 1px 5px var(--shadow);
+	background-size:cover;
+}
+
+.statueOfLiberty:hover:after{
+	content:"STATUE OF LIBERTY \A -A universal symbol of freedom, the Statue of Libertyis \A America`s most familiar icon and largest statue \A in the world standing 152 ft in New York Harbor.";
+	white-space:pre;
+	color:white;
+	font-size:2rem;
+	text-shadow:3px 3px 3px var(--shadow);
+	
+}
+
+.goldenStateBridge{
+	background:url(../images/goldenStateBridge.jpg);
+}
+
+.goldenStateBridge::after{
+	content:"GOLDEN STATE BRIDGE";
+	font-size:3rem;
+	font-weight:bold;
+	position:absolute;
+	bottom:10px;
+	color:var(--fontColor);
+	text-shadow:1px 1px 5px var(--shadow);
+	background-size:cover;
+}
+
+.goldenStateBridge:hover:after{
+	content:"GOLDEN STATE BRIDGE \A -Arching across San Francisco Bay, joining San Francisco \A and Marin Country, the Golden Gate Bridge has been \A a California icon since it was built in the 1930s..";
+	white-space:pre;
+	color:white;
+	font-size:2rem;
+	text-shadow:3px 3px 3px var(--shadow);
+	
+}
+
+.disneyWorld{
+	background:url(../images/disneyWorld.jpg);
+}
+
+.disneyWorld::after{
+	content:"WALT DISNEY WORLD RESORT";
+	font-size:3rem;
+	font-weight:bold;
+	position:absolute;
+	bottom:10px;
+	color:var(--fontColor);
+	text-shadow:1px 1px 5px var(--shadow);
+	background-size:cover;
+}
+
+.disneyWorld:hover:after{
+	content:"WALT DISNEY WORLD RESORT \A -This mega amusement park in Orlando is the top \A family attraction in the country, and has been \A catering to both young and old for decades.1930s..";
+	white-space:pre;
+	color:white;
+	font-size:2rem;
+	text-shadow:3px 3px 3px var(--shadow);
+	
+}
+
+/*----ContentContainer----*/
+
+.statueOfLiberty,
+.goldenStateBridge,
+.disneyWorld,
+.Palawan,
+.mountFuji,
+.skyline,
+.eiffelTower,
+.leaningTower,
+.sagradaFamilia{
+	width:80%;
+	height:35rem;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+	margin-top:1%;
+	margin-right:2%;
+	margin-left:2%;
+	margin-bottom:1%;
+	border-radius:5%;
+	box-shadow:0px 0px 20px var(--shadow);
+	cursor:pointer;
+	
+}
+
+.firstContent{
+	margin-top:10%;
+}
+
+@keyframes slide{
+	0%{
+		left:0%;
+	}20%{
+		left:0%;
+	}25%{
+		left:-100%;
+	}45%{
+		left:-100%;
+	}50%{
+		left:-200%
+	}70%{
+		left:-200%;
+	}75%{
+		left:-300%;
+	}95%{
+		left:-300%;
+	}

@@ -1,0 +1,224 @@
+:root{
+	--color:white;
+	--shadow:black;
+}
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+body{
+	height:100vh;
+}
+
+
+
+.button{
+	position:fixed;
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	top:70%;
+}
+
+button{
+	width:50%;
+	height:4rem;
+	font-size:3rem;
+	font-weight:bold;
+}
+
+td{
+	width:3rem;
+	height:3rem;
+}
+
+.ccf{
+	background:url(../images/ccf.png);
+}
+
+.betty{
+	background:url(../images/bettySaNY.jfif)
+}
+
+.ben{
+	background:url(../images/ben10.png)
+}
+
+.beauty{
+	background:url(../images/theBeautyInside.jpeg);
+}
+
+.dog{
+	background:url(../images/courageDog.jpg);
+}
+
+.dexter{
+	background:url(../images/dexter.jpg);
+}
+
+.tv5{
+	background:url(../images/tv5.jfif);
+}
+
+.tie{
+	background:url(../images/tierraDeReyes.jpg);
+}
+
+.lol{
+	background:url(../images/lol.jpg);
+}
+
+.rex{
+	background:url(../images/rex.jpg);
+}
+
+.adv{
+	background:url(../images/adventureTime.jpg);
+}
+
+.flap{
+	background:url(../images/flapJack.jpeg);
+}
+
+.mari{
+	background:url(../images/mariMar.jpg);
+}
+
+.movie{
+	background:url(../images/movies.jpg);
+}
+
+.idol{
+	background:url(../images/idolInAction.jpg);
+}
+
+.ted{
+	background:url(../images/tdandChacha.png);
+}
+
+.frontline{
+	background:url(../images/frontlinePilipinas.png);
+}
+
+.fill{
+	background:url(../images/fillInTheBank.png);
+}
+
+.bawal{
+	background:url(../images/bawalNaGameShow.png);
+}
+
+.paano{
+	background:url(../images/paanoAngPangako.jpg);
+}
+
+.loyal{
+	background:url(../images/loyalWife.jfif);
+}
+
+.jhonny{
+	background:url(../images/jhonny.png);
+}
+
+.powerpuff{
+	background:url(../images/powerpuff.jpg);
+}
+
+.helen{
+	background:url(../images/helen.jpg);
+}
+
+.nba{
+	background:url(../images/nba.jpg);
+}
+
+.asap{
+	background:url(../images/asap.jpeg);
+}
+
+.fpj{
+	background:url(../images/fpj.jpg);
+}
+
+.rated{
+	background:url(../images/rated.png);
+}
+
+.ohMyDad{
+	background:url(../images/ohMyDad.jfif);
+}
+
+.kasambahay{
+	background:url(../images/kasambahay.jpg);
+}
+
+.born{
+	background:url(../images/bornTObeStar.jfif);
+}
+
+.bangon{
+	background:url(../images/bangon.jfif);
+}
+
+.johnEnEllen{
+	background:url(../images/johnEnEllen.jpg);
+}
+
+.kagat{
+	background:url(../images/kagatNgDilim.jpg);
+}
+
+.oneChamp{
+	background:url(../images/oneChamp.png);
+}
+
+.mCount{
+	background:url(../images/mCountDown.png);
+}
+
+.mCount,
+.oneChamp,
+.kagat,
+.johnEnEllen,
+.bangon,
+.born,
+.kasambahay,
+.ohMyDad,
+.rated,
+.fpj,
+.asap,
+.nba,
+.helen,
+.powerpuff,
+.jhonny,
+.loyal,
+.paano,
+.bawal,
+.fill,
+.frontline,
+.ted,
+.idol,
+.movie,
+.mari,
+.flap,
+.adv,
+.rex,
+.lol,
+.tie,
+.tv5,
+.dexter,
+.dog,
+.ate,
+.beauty,
+.ben,
+.betty,
+.ccf{
+	background-repeat:no-repeat;
+	background-size:110% 100%;
+	color:var(--color);
+	text-shadow:0px 0px 5px var(--shadow);
+	font-size:2rem;
+}
