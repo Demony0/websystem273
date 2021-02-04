@@ -1,0 +1,407 @@
+:root{
+	--fontColor:white;
+	--shadow:black;
+	--background:white;
+	--beforeBackground:rgb(110,50,250);
+	--NameDuration:4s;
+	--bodyBackground:rgba(0,0,10,.5);
+}
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+@viewport{
+	zoom:1.0;
+	width:extend-to-zoom;
+}
+
+@-ms-viewport{
+	width:extend-to-zoom;
+	zoom:1.0;
+}
+
+@viewport{
+	zoom:1.0;
+	width:extend-to-zoom;
+}
+
+@-ms-viewport{
+	width:extend-to-zoom;
+	zoom:1.0;
+}
+
+body{
+	width:100%;
+	height:310vh;
+}
+
+/* header */
+
+header .navigationWrapper{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:fixed;
+	top:0;
+	background:var(--background);
+	z-index:1;
+	
+}
+
+header .navigationWrapper ul{
+	display:flex;
+	width:80%;
+	justify-content:space-between;
+	align-items:center;
+	box-shadow:3px 8px 10px var(--shadow);
+	margin-top:1%;
+	margin-bottom:1%;
+	margin-left:10%;
+	margin-right:10%;
+	padding:1%;
+	border-radius:10px;
+}
+header .navigationWrapper ul li{
+	list-style:none;
+	font-size:1.5rem;
+}
+
+header .navigationWrapper ul li a{
+	text-decoration:none;
+	color:var(--fontColor);
+	text-shadow:5px 3px 7px var(--shadow),
+				1px 1px 1px var(--shadow);
+}
+
+header .navigationWrapper ul li a:hover{
+	text-shadow:none;
+	color:black;
+	font-weight:bold;
+	transition:all 1s ease-in-out;
+}
+
+header .navigationWrapper ul li:first-child{
+	margin-left:2%;
+}
+
+header .navigationWrapper ul li:last-child{
+	margin-right:2%;
+}
+
+/* main */
+
+/* introdution */
+
+.introductionWrapper{
+	width:100%;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+#introduction{
+	transition:all .5 ease-in-out;
+	font-size:2.5rem;
+	color:var(--fontColor);
+	text-shadow:3px 5px 10px var(--shadow),
+				1px 1px 1px var(--shadow);
+}
+
+.jump{
+	display:inline-block;
+	animation:jump var(--NameDuration) infinite;
+	transition:all .5 ease-in-out;
+}
+
+#introduction::after{
+	content:"let`s share and enjoy each idea we provide and bring!\A \A ";
+	white-space:pre;
+	color:var(--fontColor);
+	text-shadow:0 0 10px var(--shadow),
+				1px 1px 1px var(--shadow);
+	font-size:1.3rem;
+	display:block;
+}
+
+@keyframes jump{
+	0%{
+		color:white;
+	}50%{
+		color:rgba(0,0,0,.5);
+		transform:translateY(-10rem)
+		
+	}
+}
+
+/* profile */
+
+.profileSection{
+	width:100%;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.profileImage{
+	background:url(./images/porfolio.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100%;
+	width:32rem;
+	height:32rem;
+	border-bottom:3px solid black;
+	transition:all .5s ease-in-out;
+}
+
+.profileImage::before{
+	content:"Hi, Friend";
+	position:absolute;
+	font-size:3rem;
+	color:var(--fontColor);
+	text-shadow:3px 3px 10px var(--shadow),
+				0px 0px 1px var(--shadow);
+	font-weight:bold;
+	left:60%;
+	transform:translateY(2.5rem);
+	animation:shake var(--NameDuration) infinite;
+	transition:all 1s ease-in-out;
+}
+
+.profileImage:hover:before{
+	content:"Hi My Name is \a Lebasora John Jefferson\a a BSIT-2E student, studying\a in EVSU. I`am highly Interested\a making RESPONSIVE web as \a front-end developer";
+	white-space:pre;
+	animation:none;
+	font-size:1.5rem;
+	top:50%;
+	transform:translateX(120px);
+	transition:none;
+	color:red;
+}
+
+.profileImage:hover{
+	transform:translateX(-150px);
+}
+
+/* activities */
+
+#activities{
+	width:100%;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.activities{
+	list-style:none;
+	display:flex;
+	justify-content:space-around;
+	width:100%;
+	flex-wrap:wrap;
+}
+
+.activities li{
+	width:10rem;
+	height:10rem;
+	margin-bottom:1%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:var(--fontColor);
+	text-shadow:3px 3px 10px var(--shadow);
+	font-weight:bold;
+}
+
+.cp2{
+	background:url(./images/chapter2.png);
+}
+.cp3{
+	background:url(./images/cp3.png);
+}
+
+.cp4{
+	background:url(./images/cp4.png);
+}
+
+.cp5{
+	background:url(./images/cp5.png);
+}
+
+.cp6{
+	background:url(./images/cp6.png);
+}
+
+.cp7{
+	background:url(./images/cp7.png);
+}
+
+.cp8{
+	background:url(./images/cp8.png);
+}
+
+.cp5,
+.cp6,
+.cp7,
+.cp8,
+.cp3,
+.cp2,
+.cp4{
+	background-size:cover;
+	background-repeat:no-repeat;
+	color:black;
+	font-size:1.5rem;
+	font-weight:bold;
+	text-shadow:1px 1px 3px red,
+				3px 3px 10px green;
+}
+
+.activities:first-child{
+	margin-left:5%;
+}
+
+.activities:last-child{
+	margin-right:5%;
+}
+
+.activities a{
+	text-decoration:none;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.activities li:hover{
+	animation:hop 1s infinite;	
+	z-index:1;
+}
+
+
+/* footer */
+
+footer{
+	width:100%;
+	height:10vh;
+	display:flex;
+	background:rgba(0,0,0,.7);
+}
+
+footer ul{
+	display:flex;
+	width:100%;
+	align-items:center;
+	justify-content:space-around;
+}
+
+footer ul li{
+	list-style:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+footer ul li a{
+	text-decoration:none;
+	color:var(--fontColor);
+	text-shadow:1px 1px 3px var(--shadow);
+}
+
+.youtube{
+	background:url(./images/youtube.png);
+}
+
+.facebook{
+	background:url(./images/facebook.png);
+}
+
+.gmail{
+	background:url(./images/gmail.png);
+}
+
+
+.youtube,
+.gmail,
+.facebook{
+	width:4rem;
+	height:4rem;
+	background-size:cover;
+	background-repeat:no-repeat;
+	font-size:1rem;
+	font-weight:bold;
+}
+
+label{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:var(--fontColor);
+	text-shadow:1px 1px 3px var(--shadow);
+	text-transform:uppercase;
+}
+
+@keyframes hop{
+	0%{
+		transform:translateY(0);
+		transition:all var(--NameDuration) ease-in-out;
+	}50%{
+		transform:translateY(-40px);
+		transition:all var(--NameDuration) ease-in-out;
+	}
+}
+
+
+
+
+@keyframes shake{
+	20%{
+		transform:translateY(-1rem);
+		color:green;
+		text-shadow:0px 1px 3px var(--shadow);
+	}50%{
+		transform:translateY(2rem);
+		text-shadow:0px 1px 3px var(--shadow);
+	}
+}
+
+
+@media only screen and (max-width:760px){
+	.jump{
+		font-size:1.5rem;
+	}
+	#introduction::after{
+		font-size:1rem;
+	}
+	header .navigationWrapper ul li{
+		font-size:1rem;
+	}
+	
+	.profileImage{
+		width:30rem;
+		height:30rem;
+	}
+	
+	.profileImage:hover:before{
+		content:"Hi My Name is Lebasora John Jefferson a BSIT-2E \a student, studying in EVSU.I`am highly Interested\a making web as front-end";
+		transform:translateY(-300px);
+		left:16%;
+		font-size:1rem;
+	}
+	.profileImage:hover{
+		transform:translateX(0px);
+	}
+	
+	.header .navigationWrapper ul{
+		width:100%;
+		display:flex;
+	}
+	
+}
+
